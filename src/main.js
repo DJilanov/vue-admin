@@ -22,7 +22,7 @@ import './plugins/vuex-router-sync';
 import './plugins/bootstrap';
 import './plugins/font-awesome';
 import './plugins/register-service-worker';
-
+import icons from './assets/icons/icons';
 /* ============
  * Styling
  * ============
@@ -72,6 +72,8 @@ new Vue({
    * The Vuex store.
    */
   store,
+
+  icons,
 
   /**
    * Will render the application.

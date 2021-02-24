@@ -73,10 +73,11 @@ import {
   cilUserFemale,
   cilUserFollow,
   cilXCircle,
-
+  cilMediaPlay,
+  cilMap,
 } from '@coreui/icons';
 
-import * as logo from './logo';
+import logo from './logo';
 
 export default {
 
@@ -155,4 +156,6 @@ export default {
   cibPaypal,
   cibGooglePay,
   cibCcAmex,
+  cilMediaPlay,
+  cilMap,
 };
