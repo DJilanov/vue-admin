@@ -75,6 +75,9 @@ import {
   cilXCircle,
   cilMediaPlay,
   cilMap,
+  cilBrowser,
+  cilUserUnfollow,
+  cilChart,
 } from '@coreui/icons';
 
 import logo from './logo';
@@ -158,4 +161,7 @@ export default {
   cibCcAmex,
   cilMediaPlay,
   cilMap,
+  cilBrowser,
+  cilUserUnfollow,
+  cilChart,
 };

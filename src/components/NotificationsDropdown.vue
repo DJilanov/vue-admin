@@ -6,24 +6,21 @@
     add-menu-classes="pt-0"
   >
     <template #toggler>
-      <CHeaderNavLink>
-        <div class="c-avatar">
-          <img
-            src="img/avatars/6.jpg"
-            class="c-avatar-img "
-          >
-        </div>
-      </CHeaderNavLink>
+      <CIcon
+        class="white"
+        name="cil-bell"
+      />
     </template>
     <CDropdownHeader
       tag="div"
       class="text-center"
       color="light"
     >
-      <strong>Account</strong>
+      <strong>Notifications</strong>
+      <!-- <strong>You have 5 new notifications</strong> -->
     </CDropdownHeader>
     <CDropdownItem>
-      <CIcon name="cil-bell" /> Updates
+      <CIcon name="cil-user-follow" /> New user registered
       <CBadge
         color="info"
         class="mfs-auto"
@@ -32,7 +29,7 @@
       </CBadge>
     </CDropdownItem>
     <CDropdownItem>
-      <CIcon name="cil-envelope-open" /> Messages
+      <CIcon name="cil-user-unfollow" /> User deleted
       <CBadge
         color="success"
         class="mfs-auto"
@@ -41,7 +38,7 @@
       </CBadge>
     </CDropdownItem>
     <CDropdownItem>
-      <CIcon name="cil-task" /> Tasks
+      <CIcon name="cil-chart" /> Sales report is ready
       <CBadge
         color="danger"
         class="mfs-auto"
@@ -50,7 +47,7 @@
       </CBadge>
     </CDropdownItem>
     <CDropdownItem>
-      <CIcon name="cil-comment-square" /> Comments
+      <CIcon name="cil-basket" /> New client
       <CBadge
         color="warning"
         class="mfs-auto"
@@ -58,43 +55,14 @@
         {{ itemsCount }}
       </CBadge>
     </CDropdownItem>
-    <CDropdownHeader
-      tag="div"
-      class="text-center"
-      color="light"
-    >
-      <strong>Settings</strong>
-    </CDropdownHeader>
     <CDropdownItem>
-      <CIcon name="cil-user" /> Profile
-    </CDropdownItem>
-    <CDropdownItem>
-      <CIcon name="cil-settings" /> Settings
-    </CDropdownItem>
-    <CDropdownItem>
-      <CIcon name="cil-dollar" /> Payments
+      <CIcon name="cil-speedometer" /> Server overloaded
       <CBadge
-        color="secondary"
+        color="warning"
         class="mfs-auto"
       >
         {{ itemsCount }}
       </CBadge>
-    </CDropdownItem>
-    <CDropdownItem>
-      <CIcon name="cil-file" /> Projects
-      <CBadge
-        color="primary"
-        class="mfs-auto"
-      >
-        {{ itemsCount }}
-      </CBadge>
-    </CDropdownItem>
-    <CDropdownDivider />
-    <CDropdownItem>
-      <CIcon name="cil-shield-alt" /> Lock Account
-    </CDropdownItem>
-    <CDropdownItem>
-      <CIcon name="cil-lock-locked" /> Logout
     </CDropdownItem>
   </CDropdown>
 </template>

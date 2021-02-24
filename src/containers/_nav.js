@@ -6,7 +6,7 @@ export default [
         _name: 'CSidebarNavItem',
         name: 'Overview',
         to: '/overview',
-        icon: 'cil-speedometer',
+        icon: 'cil-browser',
       },
       {
         _name: 'CSidebarNavTitle',

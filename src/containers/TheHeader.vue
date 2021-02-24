@@ -2,7 +2,7 @@
   <CHeader
     fixed
     with-subheader
-    light
+    class="c-header-dark"
   >
     <CToggler
       in-header
@@ -46,21 +46,22 @@
     </CHeaderNav>
     <CHeaderNav class="mr-4">
       <CHeaderNavItem class="d-md-down-none mx-2">
-        <CHeaderNavLink>
-          <CIcon name="cil-bell" />
-        </CHeaderNavLink>
+        <NotificationsDropdown />
+      </CHeaderNavItem>
+      <CHeaderNavItem class="d-md-down-none mx-2">
+        <EmailDropdown />
       </CHeaderNavItem>
       <CHeaderNavItem class="d-md-down-none mx-2">
         <CHeaderNavLink>
-          <CIcon name="cil-list" />
+          <a
+            class="btn btn-block btn-info active c-header-nav-link"
+            href="#"
+          >
+            Subscribe
+          </a>
         </CHeaderNavLink>
       </CHeaderNavItem>
-      <CHeaderNavItem class="d-md-down-none mx-2">
-        <CHeaderNavLink>
-          <CIcon name="cil-envelope-open" />
-        </CHeaderNavLink>
-      </CHeaderNavItem>
-      <TheHeaderDropdownAccnt />
+      <ProfileDropdown />
     </CHeaderNav>
     <CSubheader class="px-3">
       <CBreadcrumbRouter class="border-0 mb-0" />
@@ -69,12 +70,16 @@
 </template>
 
 <script>
-import TheHeaderDropdownAccnt from './TheHeaderDropdownAccnt.vue';
+import ProfileDropdown from '../components/ProfileDropdown.vue';
+import EmailDropdown from '../components/EmailDropdown.vue';
+import NotificationsDropdown from '../components/NotificationsDropdown.vue';
 
 export default {
   name: 'TheHeader',
   components: {
-    TheHeaderDropdownAccnt,
+    ProfileDropdown,
+    EmailDropdown,
+    NotificationsDropdown,
   },
 };
 </script>
