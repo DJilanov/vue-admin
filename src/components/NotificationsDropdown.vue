@@ -10,6 +10,12 @@
         class="white"
         name="cil-bell"
       />
+      <CBadge
+        color="info"
+        class="mfs-auto"
+      >
+        5
+      </CBadge>
     </template>
     <CDropdownHeader
       tag="div"
@@ -72,7 +78,7 @@ export default {
   name: 'TheHeaderDropdownAccnt',
   data() {
     return {
-      itemsCount: 42,
+      itemsCount: 1,
     };
   },
 };

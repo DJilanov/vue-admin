@@ -1,0 +1,20 @@
+.dropdwn {
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 56px;
+    padding-right: 1rem;
+    background: #fff;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 3px solid $nav-bgr;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+}
+

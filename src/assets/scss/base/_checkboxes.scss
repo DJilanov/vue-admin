@@ -1,0 +1,181 @@
+$md-checkbox-checked-color: rgb(51, 122, 183);
+$md-checkbox-border-color: rgba(0, 0, 0, 0.54);
+$md-checkbox-border-color-disabled: rgba(0, 0, 0, 0.26);
+$md-checkbox-checked-color-disabled: rgba(0, 0, 0, 0.26);
+
+$md-checkbox-size: 1.25rem;
+$md-checkbox-padding: .25rem;
+$md-checkbox-border-width: 2px;
+$md-checkbox-border-radius: 0.125rem;
+$md-checkmark-width: 0.125rem;
+$md-checkmark-color: #fff;
+$md-checkbox-label-padding: .75rem;
+
+.md-checkbox {
+  position: relative;
+  text-align: left;
+
+  &.md-checkbox-inline {
+    display: inline-block;
+  }
+
+  label {
+    cursor: pointer;
+    display: inline;
+    margin-left: 10px;
+    line-height: $md-checkbox-size;
+    vertical-align: top;
+    clear: both;
+    color: $team-right;
+    padding-left: 1px;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &:before {
+      // box
+      width: $md-checkbox-size;
+      height: $md-checkbox-size;
+      background: transparent;
+      border: $md-checkmark-width solid $team-right;
+      border-radius: $md-checkbox-border-radius;
+      cursor: pointer;
+      transition: border .3s;
+    }
+
+    &:after {
+      // checkmark
+    }
+  }
+
+  input[type="checkbox"] {
+    outline: 0;
+    visibility: hidden;
+    width: $md-checkbox-size;
+    margin: 0;
+    display: block;
+    float: left;
+    font-size: inherit;
+
+    &:checked {
+      + label:before{
+        background: transparent;
+        border: $md-checkmark-width solid $team-right;
+      }
+      + label:after {
+
+        $md-checkmark-size: $md-checkbox-size - 2 * $md-checkbox-padding;
+
+        transform: translate($md-checkbox-padding, ($md-checkbox-size / 2) - ($md-checkmark-size / 2.6)) rotate(-45deg);
+        width: $md-checkmark-size;
+        height: $md-checkmark-size / 2;
+
+        border: $md-checkmark-width solid $team-right;
+        border-top-style: none;
+        border-right-style: none;
+      }
+    }
+
+    &:disabled {
+      + label:before{
+        border-color: $md-checkbox-border-color-disabled;
+      }
+      &:checked {
+        + label:before{
+          background: $md-checkbox-checked-color-disabled;
+        }
+      }
+    }
+  }
+
+  &.tr {
+    label {
+      color: $team-right;
+      &:before {
+        border: $md-checkmark-width solid $team-right;
+      }
+    }
+    input[type="checkbox"] {
+      &:checked {
+        + label:before{
+          border: $md-checkmark-width solid $team-right;
+        }
+        + label:after {
+          border: $md-checkmark-width solid $team-right;
+          border-top-style: none;
+          border-right-style: none;
+        }
+      }
+    }
+  }
+  &.tl {
+    label {
+      background: transparent;
+      color: $team-left;
+      &:before {
+        border: $md-checkmark-width solid $team-left;
+      }
+    }
+    input[type="checkbox"] {
+      &:checked {
+        + label:before{
+          background: transparent;
+          border: $md-checkmark-width solid $team-left;
+        }
+        + label:after {
+          border: $md-checkmark-width solid $team-left;
+          border-top-style: none;
+          border-right-style: none;
+        }
+      }
+    }
+  }
+  &.tw {
+    label {
+      background: transparent;
+      color: $body-bgr;
+      &:before {
+        border: $md-checkmark-width solid $body-bgr;
+      }
+    }
+    input[type="checkbox"] {
+      &:checked {
+        + label:before{
+          background: transparent;
+          border: $md-checkmark-width solid $body-bgr;
+        }
+        + label:after {
+          border: $md-checkmark-width solid $body-bgr;
+          border-top-style: none;
+          border-right-style: none;
+        }
+      }
+    }
+  }
+  &.td {
+    label {
+      background: transparent;
+      color: $danger-dark;
+      &:before {
+        border: $md-checkmark-width solid $danger-dark;
+      }
+    }
+    input[type="checkbox"] {
+      &:checked {
+        + label:before{
+          background: transparent;
+          border: $md-checkmark-width solid $danger-dark;
+        }
+        + label:after {
+          border: $md-checkmark-width solid $danger-dark;
+          border-top-style: none;
+          border-right-style: none;
+        }
+      }
+    }
+  }
+}

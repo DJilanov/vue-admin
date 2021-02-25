@@ -1,1 +1,46 @@
-// Variable overrides
+// Boostrap variables
+@import "node_modules/@coreui/coreui/scss/bootstrap";
+
+/*===== Colors =====*/
+$ele-bgr: #1a212b;
+$accent: #2e78a9;
+$accent-light: #7bccff;
+$text-lite: #b0b0b0;
+$body-bgr: #fff;
+$nav-bgr: #3c4b64;
+$link-hover: #5a6e8f;
+$team-left: #fabc49;
+$team-left-lite: lighten(#f9b115, 30%);
+$team-right: #2eb85c;
+$team-right-lite: lighten(#2eb85c, 30%);
+$danger: #ffb2b2;
+$sidebar-close-btn-width: 26px;
+$sidebar-width: var(--sidebar-right-width);
+$sidebar-minimized-width: var(--sidebar-right-mimized-width);
+
+/*===== Speed =====*/
+$speed: 1s;
+$speed-high: .3s;
+
+/*===== others =====*/
+$nav-height: 70px;
+
+/*===== Fonts =====*/
+$HelveticaNeueLTStdLt: "HelveticaNeueLTStdLt", "Helvetica", "Arial", sans-serif;
+$HelveticaNeueLTStdBd: "HelveticaNeueLTStdBd", "Helvetica", "Arial", sans-serif;
+
+/*===== z index =====*/
+$z-index: 100;
+
+/*===== Breakpoints =====*/
+$breakpoints: (
+  l: ( dir: min, size: 1072px ),
+  m: ( dir: min, size: 650px ),
+  s: ( dir: min, size: 420px ),
+);
+
+/*===== Css variables =====*/
+:root {
+  --sidebar-right-width: 256px;
+  --sidebar-right-mimized-width: 50px;
+}

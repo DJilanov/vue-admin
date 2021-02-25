@@ -1,0 +1,77 @@
+.radio {
+  label {
+    cursor: pointer;
+    min-height: 20px;
+    padding-left: 30px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    &::before {
+      content: "";
+      left: 0;
+      position: absolute;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-left: 1px;
+      transition: border 0.15s ease-in-out 0s;
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 3px;
+      left: 2px;
+      display: inline-block;
+      height: 11px;
+      width: 11px;
+      margin-left: 2px;
+      border-radius: 50%;
+      transform: scale(0, 0);
+      transition: transform 0.3s cubic-bezier(0.8, -0.33, 0.2, 1.33) 0s;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked {
+      + label::after {
+        transform: scale(1, 1);
+      }
+    }
+    &:checked {
+      + label::after {
+        transform: scale(1, 1);
+      }
+    }
+  }
+
+  &.tl {
+    label {
+      color: $team-left;
+      &::before {
+        border: 1px solid $team-left;
+      }
+      &::after {
+        background-color: $team-left;
+      }
+    }
+  }
+  &.tr {
+    label {
+      color: $team-right;
+      &::before {
+        border: 1px solid $team-right;
+      }
+      &::after {
+        background-color: $team-right;
+      }
+    }
+  }
+
+}
+

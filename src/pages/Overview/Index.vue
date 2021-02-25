@@ -1,29 +1,103 @@
 <template>
-  <v-card contextual-style="dark">
-    <div slot="body">
-      <p>
-        Get started with the Augment
-      </p>
-      <p>
-        For questions, contact me:
-      </p>
-      <p>
+  <main>
+    <CContainer>
+      <CRow>
+        <CCol lg="4">
+          <button
+            id="dropdownMenuButton1"
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            All maps
+          </button>
+          <CDropdown
+            color="light"
+            toggler-text="All maps"
+            class="m-2"
+          >
+            <CDropdownItem>de_cache</CDropdownItem>
+            <CDropdownItem>de_dust2</CDropdownItem>
+            <CDropdownItem>de_inferno</CDropdownItem>
+            <CDropdownItem>de_mirage</CDropdownItem>
+            <CDropdownItem>de_nuke</CDropdownItem>
+            <CDropdownItem>de_overpass</CDropdownItem>
+            <CDropdownItem>de_train</CDropdownItem>
+            <CDropdownItem>de_vertigo</CDropdownItem>
+          </CDropdown>
+        </CCol>
+        <CCol lg="4">
+          <CDropdown
+            color="light"
+            toggler-text="Anyone"
+            class="m-2"
+          >
+            <CDropdownItem>Astralis</CDropdownItem>
+            <CDropdownItem>Team Liquid</CDropdownItem>
+          </CDropdown>
+        </CCol>
+        <CCol lg="4">
+          <CDropdown
+            color="light"
+            toggler-text="Anyone"
+            class="m-2"
+          >
+            <CDropdownItem>Astralis</CDropdownItem>
+          </CDropdown>
+        </CCol>
+      </CRow>
+    </CContainer>
+    <v-card contextual-style="dark">
+      <div slot="body">
+        <p>
+          <a
+            class="btn btn-outline-primary"
+            href="http://gitter.im/petervmeijgaard"
+            target="_blank"
+          >
+            <i
+              class="fa fa-github fa-fw"
+              aria-hidden="true"
+            />
+            <span class="pl-2">
+              Gitter
+            </span>
+          </a>
+          <a
+            class="btn btn-outline-primary"
+            href="http://github.com/petervmeijgaard"
+            target="_blank"
+          >
+            <i
+              class="fa fa-github fa-fw"
+              aria-hidden="true"
+            />
+            <span class="pl-2">
+              GitHub
+            </span>
+          </a>
+          <a
+            class="btn btn-outline-primary"
+            href="http://twitter.com/petervmeijgaard"
+            target="_blank"
+          >
+            <i
+              class="fa fa-twitter fa-fw"
+              aria-hidden="true"
+            />
+            <span class="pl-2">
+              Twitter
+            </span>
+          </a>
+        </p>
+        <p>
+          For bugs, see:
+        </p>
         <a
           class="btn btn-outline-primary"
-          href="http://gitter.im/petervmeijgaard"
-          target="_blank"
-        >
-          <i
-            class="fa fa-github fa-fw"
-            aria-hidden="true"
-          />
-          <span class="pl-2">
-            Gitter
-          </span>
-        </a>
-        <a
-          class="btn btn-outline-primary"
-          href="http://github.com/petervmeijgaard"
+          href="https://github.com/petervmeijgaard/vue-2.0-boilerplate/issues"
           target="_blank"
         >
           <i
@@ -34,41 +108,9 @@
             GitHub
           </span>
         </a>
-        <a
-          class="btn btn-outline-primary"
-          href="http://twitter.com/petervmeijgaard"
-          target="_blank"
-        >
-          <i
-            class="fa fa-twitter fa-fw"
-            aria-hidden="true"
-          />
-          <span class="pl-2">
-            Twitter
-          </span>
-        </a>
-      </p>
-      <p>
-        For bugs, see:
-      </p>
-      <a
-        class="btn btn-outline-primary"
-        href="https://github.com/petervmeijgaard/vue-2.0-boilerplate/issues"
-        target="_blank"
-      >
-        <i
-          class="fa fa-github fa-fw"
-          aria-hidden="true"
-        />
-        <span class="pl-2">
-          GitHub
-        </span>
-      </a>
-    </div>
-    <div slot="footer">
-      Made with love by Vivid Web
-    </div>
-  </v-card>
+      </div>
+    </v-card>
+  </main>
 </template>
 
 <script>
