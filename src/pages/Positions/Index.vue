@@ -1,74 +1,277 @@
 <template>
-  <v-card contextual-style="dark">
-    <div slot="body">
-      <p>
-        Get started with the Augment
-      </p>
-      <p>
-        For questions, contact me:
-      </p>
-      <p>
-        <a
-          class="btn btn-outline-primary"
-          href="http://gitter.im/petervmeijgaard"
-          target="_blank"
-        >
-          <i
-            class="fa fa-github fa-fw"
-            aria-hidden="true"
-          />
-          <span class="pl-2">
-            Gitter
-          </span>
-        </a>
-        <a
-          class="btn btn-outline-primary"
-          href="http://github.com/petervmeijgaard"
-          target="_blank"
-        >
-          <i
-            class="fa fa-github fa-fw"
-            aria-hidden="true"
-          />
-          <span class="pl-2">
-            GitHub
-          </span>
-        </a>
-        <a
-          class="btn btn-outline-primary"
-          href="http://twitter.com/petervmeijgaard"
-          target="_blank"
-        >
-          <i
-            class="fa fa-twitter fa-fw"
-            aria-hidden="true"
-          />
-          <span class="pl-2">
-            Twitter
-          </span>
-        </a>
-      </p>
-      <p>
-        For bugs, see:
-      </p>
-      <a
-        class="btn btn-outline-primary"
-        href="https://github.com/petervmeijgaard/vue-2.0-boilerplate/issues"
-        target="_blank"
-      >
-        <i
-          class="fa fa-github fa-fw"
-          aria-hidden="true"
-        />
-        <span class="pl-2">
-          GitHub
-        </span>
-      </a>
-    </div>
-    <div slot="footer">
-      Made with love by Vivid Web
-    </div>
-  </v-card>
+  <div class="black">
+    <svg
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:cc="http://creativecommons.org/ns#"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 1024 1024"
+      height="843"
+      width="843"
+      class="background"
+    ><defs><linearGradient id="gradient"><stop
+      offset="0"
+      class="map-stop-1"
+    /><stop
+      offset="1"
+      class="map-stop-2"
+    /></linearGradient><linearGradient
+      id="topbottom"
+      y2="0%"
+      x2="0%"
+      y1="100%"
+      x1="0%"
+      gradientUnits="objectBoundingBox"
+      xlink:href="#gradient"
+    /><linearGradient
+      id="bottomtop"
+      y2="100%"
+      x2="0%"
+      y1="0%"
+      x1="0%"
+      gradientUnits="objectBoundingBox"
+      xlink:href="#gradient"
+    /><linearGradient
+      id="rightleft"
+      y2="0%"
+      x2="100%"
+      y1="0%"
+      x1="0%"
+      gradientUnits="objectBoundingBox"
+      xlink:href="#gradient"
+    /><linearGradient
+      id="leftright"
+      y2="0%"
+      x2="0%"
+      y1="0%"
+      x1="100%"
+      gradientUnits="objectBoundingBox"
+      xlink:href="#gradient"
+    /></defs><pattern
+      id="diagonalHatch"
+      patternUnits="userSpaceOnUse"
+      width="4"
+      height="4"
+    ><path
+      d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2"
+      style="stroke:rgba(0, 0, 0, 0.6); stroke-width:1;"
+    /></pattern><path
+      class="map-ground"
+      d="M77.559 16.814V182.78h-9.22v22.239h5.694v7.591H62.102v50.713h11.931v7.051h-6.78v57.762h29.831v88.949H61.83v86.238h48v-3.525h5.967v3.525h24.406v15.457h29.83v57.764h-43.931v20.88H92.475v104.95h4.609v61.287h-5.965v86.238l-33.898 34.17v91.66h94.914v6.78h276.883v-2.711h59.931v24.95h117.424v-36.07h61.83v-88.134h-18.44c.057-19.994-.27-37.928-.27-57.22h36.337v7.322h53.424V676.152h-13.83v-11.697h11.66v-95.496h-11.66v-12.273h24.406v5.484h17.086l15.457 15.185v21.153h-4.068v92.204h65.38l-.294-27.66H848v35.525h73.764v-35.525h4.609v7.321h43.39V504.678l-42.847-4.61v-83.525h4.066v-59.12l10.848-27.39h11.12v-11.66h18.71v-46.644l-4.88-55.323h-36.07V103.322h-8.677V36.34H790.77v66.228H617.931v15.058h7.831v36.138h-55.785v40.386l-16.891 17.239h-63.053v-61.207H324.34v-33.03h-57.22v2.983h-8.679v-4.61h-2.984v-13.017l-36.338-23.051h-83.525V16.814zm180.74 121.84h8.435v75.936H258.3zm-1.485 116.262h12.745v7.406h9.763v8.051h47.186v-7.05h33.627v6.779h33.629v-6.78h35.525v33.899h-8.95v37.424h8.89v26.576h16.199v37.695h-9.08v-11.12H284.746v52.872H269.29v5.977h-6.781v-5.977H216.95v6.248h-6.238v-6.238h-24.678V416.27h-59.388v-87.593h42.304v43.662h29.83l12.475-24.95 39.322-40.68v-43.388h6.238zm357.153 6.236h11.931v40.137h-8.677v84.61h-39.323v-14.102h-46.916v14.644h-41.49v-41.763h13.83v-17.084h-13.83v-41.221h71.322l23.592-15.187h29.56zm63.705 10.774h85.715v7.863h78.812v48.13h-4.217v59.061h4.217v71.143H726.188l-53.31 9.97v88.593h15.915v12.273h-10.545v95.496h10.354v7.094h-3.26v4.603H667.51v-9.205h2.492v-41.802H548.043l-14.764-14.766V448.918l14.381-14.957h79.772v-2.875h50.24zm-240.52 153.838h8.678v53.965h-8.135v56.949h7.051v33.086H416v48.27h-24.678l14.373 73.763h39.594v186.576h-43.934v10.848h-48v-10.576h-7.863V769.898h-45.56v21.967h-41.49l-14.374-14.916v-34.713l14.373-14.37h21.694v-28.747l-12.475-84.068v-20.069h-22.508v-19.796h-44.474v-57.49h11.39v-12.104h-1.654v-5.389h6.264v3.526h46.644v-3.526h5.424v3.662s28.428-.443 33.22-2.306c23.003-8.943 28.474-26.372 29.186-39.864.526-9.957-.17-23.728-.17-23.728h106.17zm-273.966 15.293h5.753V447h-5.753zm0 58.773h5.753v5.945h-5.753zm326.847 170h85.424l14.102 14.645v107.119h-6.508v35.525l-15.186 14.914h-20.068v-7.05h-54.238l-14.373-14.374v-43.388h-3.795v-93.83z"
+    /><path
+      class="map-stair-topbottom"
+      d="M848 561.9h73.8v136.7H848z"
+    /><path
+      d="M848.72 99.344h73.313v3.978h8.678v77.824H848.72z"
+      class="map-stair-bottomtop extra"
+    /><path
+      d="M617.267 334.915h36.835v29.56h-36.835z"
+      class="map-stair-bottomtop"
+    /><path
+      class="map-upper"
+      d="M617.267 334.915h60.405v-62.99l4.219-.025v-83.964h114.287v21.477h52.542V99.344h73.313V36.34H790.77v66.228H617.931v15.058h7.831v36.138l-6.643-.014V261.1l6.78.052v40.137h-8.678z"
+    /><path
+      d="M569.977 153.764L570 193.75l18.007 17.553L570 229.05v32.102h102.111V153.764z"
+      class="map-ct-spawn"
+    /><g
+      class="map-ct-spawn-text"
+      aria-label="CT"
+    ><path
+      class="map-ct-spawn-text"
+      d="M585.187 254.59q-1.729 0-3.198-.51-1.458-.51-2.51-1.521-1.052-1.01-1.635-2.521-.573-1.51-.573-3.49 0-1.843.552-3.343t1.604-2.573q1.01-1.032 2.5-1.594 1.5-.563 3.27-.563.98 0 1.761.115.792.104 1.458.281.698.198 1.26.448.574.24 1 .448v3.76h-.457q-.292-.25-.74-.593-.438-.344-1-.677-.573-.334-1.24-.563-.666-.229-1.427-.229-.843 0-1.604.27-.76.261-1.406.876-.615.594-1 1.573-.375.979-.375 2.375 0 1.458.406 2.437.417.98 1.042 1.542.635.573 1.416.823.782.24 1.542.24.73 0 1.438-.22.718-.218 1.323-.593.51-.302.947-.646.438-.344.72-.594h.416v3.709q-.583.26-1.115.49-.53.228-1.114.395-.76.219-1.427.333-.667.115-1.834.115zm20.584-12.812h-4.844v12.51h-4v-12.51h-4.844v-3h13.688z"
+    /></g><path
+      d="M401.355 878.373v10.848h-48v-10.576h-7.863v-4.983h-50.569v82.456h194.06v-77.745z"
+      class="map-t-spawn"
+    /><path
+      class="map-t-spawn-text"
+      d="M398.797 918.135h-4.844v12.51h-4v-12.51h-4.844v-3h13.688z"
+      aria-label="T"
+    /><path
+      d="M780.646 139.805h66.156v67.499H798.2V185.9h-17.554z"
+      class="map-bombsite"
+    /><path
+      class="map-bombsite-text"
+      d="M843.974 203.932h-4.136l-1.073-3.135h-5.75l-1.073 3.135h-4.031l5.73-15.51h4.603zm-6.178-5.979l-1.906-5.562-1.906 5.562z"
+      aria-label="A"
+    /><path
+      d="M171.3 79.457v95.631h86.039V150.6H225.4v-19.04h17.35V118.7h12.707v-16.192l-36.338-23.051z"
+      class="map-bombsite"
+    /><path
+      class="map-bombsite-text"
+      d="M252.167 165.544q0 1.125-.459 2.01-.448.886-1.24 1.47-.916.687-2.02.979-1.094.291-2.781.291h-6.771v-15.51h6.02q1.876 0 2.74.125.875.125 1.73.552.885.448 1.312 1.208.437.75.437 1.72 0 1.124-.593 1.989-.594.854-1.677 1.333v.083q1.52.302 2.406 1.25.896.948.896 2.5zm-5.125-6.375q0-.385-.198-.77-.188-.386-.677-.573-.438-.167-1.094-.177-.646-.021-1.823-.021h-.375v3.281h.625q.948 0 1.615-.031.666-.031 1.052-.209.541-.24.708-.614.167-.386.167-.886zm.979 6.313q0-.74-.292-1.136-.281-.406-.969-.604-.468-.135-1.291-.146-.823-.01-1.719-.01h-.875v3.865h.292q1.687 0 2.416-.01.73-.011 1.344-.272.625-.26.854-.687.24-.438.24-1z"
+      aria-label="B"
+    /><path
+      class="map-box"
+      d="M141.3 185.6h22.5v23.1h-22.5zm43-36.2h15.3v17.2h-15.3zm-99-68h16.4v11.4H85.3zm32.3-55.8h16v16h-16zm-9.4 16.7h16v8.4h-16z"
+    /><path
+      class="map-box"
+      d="M124.2 42.3h8.9v7.3h-8.9zm76.477 59.218l13.016 7.252-7.547 12.498-13.016-7.252zM297.3 256.2h26.8v13h-26.8zm13.1-9.8h8.4v9.8h-8.4zM87.3 169.2h16.8v8.4H87.3zm225-50.4h9.8v30.1h-9.8zm-43.9.7h13.4v27.6h-13.4zm-24.9 0h12.6v30.4h-12.6z"
+    /><path
+      class="map-box"
+      d="M226.2 132.3h17.4v17.5h-17.4zm-86.9 180.1H158v14.4h-18.7zm59.477 26.159l10.71 10.785-10.785 10.71-10.71-10.785zm16.674-42.907l7.936 13.431-34.628 19.62-7.936-13.43zM64.8 419.3h32v25.8h-32zm208.6 24h15.5v17.6h-15.5zm-21.061 1.039h8v6.237h9.085v16.136h-8.136v-6.237h-8.949zM287.1 390.4h16.4v17.1h-16.4zm19.138.094l17.142 1.414-1.357 16.444-17.141-1.414zM369.2 422.4h15.5V437h-15.5zm114.2-20.8h20.7v23.2h-20.7zm-54.028-248.456l58.194 6.89-2.551 21.55-58.194-6.89zM528.3 271.5h14.8v11.1h-14.8zm-16.53-58.17v21.883h14.667v-8.819h8.708V213.33zm41.298-1.985l16.884-16.632 16.97 16.544-16.884 16.632zM152.814 435.932l7.728 5.56-8.678 12.745-7.864-5.423zM140.7 602.8h8.9v8.9h-8.9zm22 166.8h17.4V787h-17.4zm2.722 19.935l15.57 2.02-2.02 15.57-15.57-2.02z"
+    /><path
+      class="map-box"
+      d="M179.713 771.749l15.501-2.495 2.495 15.5-15.5 2.495zM302.2 771.5h10.7v10.7h-10.7zm21.7 55.6h17.3v45.6h-17.3zM100.1 929.8h40.7v17.3h-40.7zm346.8-185.3H463V762h-16.1z"
+    /><path
+      class="map-box"
+      d="M451.873 749.097l7.762 1.938-3.973 15.911-7.762-1.938zM446.5 772.1h8.3v8.4h-8.3zm279.6 43.4H738v11.8h-11.9zm-30.121-88.17l18.1-5.777 13.895 43.537-18.1 5.777zM590.8 750.8h14.8v15.1h-14.8zm-1.66-15.246l14.157-4.317 4.404 14.444-14.156 4.316zM422.8 571.4h16.5v17.1h-16.5zm235.9-160.1H676v17.3h-17.3zm59.1 163.3h16.3v16h-16.3zm0 16h16.3V601h-16.3zm-8.8-12.3h8.5v15.5H709zm15.1-118.8h41.6v28.8h-41.6zm41.6 0h16.5v17.3h-16.5zM659 273.9h16.3v16.3H659zm271.008-19.29l18.379-4.82 11.77 44.882-18.378 4.82zM830.4 158.6h14.9v14.9h-14.9zm-41.7 10.2h14.9v14.9h-14.9zm4.208-18.141l14.434 3.695-3.695 14.435-14.435-3.696zM692.6 104.9h35v16h-35zm-6.227 109.88h36.881v-15.458h8.678v-7.864h-45.559zM850.8 181.1h5v17h-5zM231.6 745.8h10.2v16.9h-10.2zm10.207-.04l2.396-16.133-10.034-1.898-2.711 16.135z"
+    /><path
+      d="M247.458 733.288l-7.594-8.407 10.983-9.762 7.187 8.135z"
+      class="map-box"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="146.3"
+      cx="681.4"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="154.3"
+      cx="686.1"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="180.3"
+      cx="727.9"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="180.3"
+      cx="736.9"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="114.7"
+      cx="648.8"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="107.7"
+      cx="643"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="109.3"
+      cx="633.8"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="118.5"
+      cx="630.8"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="116.9"
+      cx="639.7"
+    /><circle
+      class="map-circles"
+      r="4.6"
+      cy="111.5"
+      cx="624.8"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="107.8"
+      cx="756.5"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="115.5"
+      cx="756.6"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="122.6"
+      cx="760.4"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="90.8"
+      cx="858.2"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="90.3"
+      cx="865.9"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="195.5"
+      cx="253.3"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="204.2"
+      cx="252.5"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="103.6"
+      cx="158.9"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="130.2"
+      cx="149.7"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="136.7"
+      cx="143.5"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="773.2"
+      cx="203.1"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="778.6"
+      cx="210.7"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="606.6"
+      cx="516.9"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="606.9"
+      cx="509.6"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="875.2"
+      cx="643.5"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="723.3"
+      cx="594.8"
+    /><circle
+      class="map-circles"
+      r="3.7"
+      cy="550.7"
+      cx="748.2"
+    /><path
+      class="map-walls"
+      d="M619.119 153.75V261.1"
+    /><path
+      d="M301.298 439.1v20.845s-1.772 16.107-22.866 14.285"
+      class="map-small-walls"
+    /><path
+      d="M654.102 364.475v-29.56h23.57"
+      class="map-windows"
+    /><path
+      d="M845.652 662.92V561.097m78.237 101.823V561.097M507.008 386.448v171.389M92.544 615.05l62.846.001m112.27-.001l-52.067.001m28.332 151.051h-85.01v111.186m286.387-1.098h116.325M681.891 271.9v-83.964h114.287v21.477h52.542V99.344M77.586 181.3h33.6m30.102 0h27.932V79.5m115.526 361.168h16.552"
+      class="map-big-walls"
+    /><path
+      d="M262.712 214.723l-9.122 18.848m8.952 21.261l9.988-17.643M445.627 366.17l18.712 9.491m24.746-8.407l-18.78-9.56m218.78 207.391l14.576-9.56m21.356 8l-14.78 9.83m-21.287 94.577l15.728-10.508m20.339 8.339l-14.509 9.762"
+      class="map-big-doors"
+    /></svg>
+  </div>
 </template>
 
 <script>
@@ -79,8 +282,6 @@
  * The home index page.
  */
 
-import VCard from '@/components/Card.vue';
-
 export default {
   /**
    * The name of the page.
@@ -90,8 +291,6 @@ export default {
   /**
    * The components that the page can use.
    */
-  components: {
-    VCard,
-  },
+  components: {},
 };
 </script>

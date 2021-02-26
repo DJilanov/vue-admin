@@ -8,12 +8,12 @@
 
 export const find = 'find';
 export const set = 'set';
-export const toggleSidebarDesktop = 'toggleSidebarDesktop';
-export const toggleSidebarMobile = 'toggleSidebarMobile';
+export const toggleLeftSidebarDesktop = 'toggleLeftSidebarDesktop';
+export const toggleLeftSidebarMobile = 'toggleLeftSidebarMobile';
 
 export default {
   find,
   set,
-  toggleSidebarDesktop,
-  toggleSidebarMobile,
+  toggleLeftSidebarDesktop,
+  toggleLeftSidebarMobile,
 };

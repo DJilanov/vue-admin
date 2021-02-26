@@ -6,6 +6,8 @@
  */
 
 export default {
-  sidebarMinimize: true,
-  sidebarShow: true,
+  leftSidebarMinimize: true,
+  leftSidebarShow: true,
+  rightSidebarMinimize: true,
+  rightSidebarShow: true,
 };

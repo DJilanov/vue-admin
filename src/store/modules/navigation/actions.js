@@ -12,16 +12,24 @@ export const set = ({ commit }) => {
   commit(types.set);
 };
 
-export const toggleSidebarDesktop = ({ commit }) => {
-  commit(types.toggleSidebarDesktop);
+export const toggleLeftSidebarDesktop = ({ commit }) => {
+  commit(types.toggleLeftSidebarDesktop);
 };
 
-export const toggleSidebarMobile = ({ commit }) => {
-  commit(types.toggleSidebarMobile);
+export const toggleLeftSidebarMobile = ({ commit }) => {
+  commit(types.toggleLeftSidebarMobile);
+};
+
+export const toggleRightSidebarDesktop = ({ commit }) => {
+  commit(types.toggleRightSidebarDesktop);
+};
+
+export const toggleRightSidebarMobile = ({ commit }) => {
+  commit(types.toggleRightSidebarMobile);
 };
 
 export default {
   set,
-  toggleSidebarDesktop,
-  toggleSidebarMobile,
+  toggleLeftSidebarDesktop,
+  toggleLeftSidebarMobile,
 };

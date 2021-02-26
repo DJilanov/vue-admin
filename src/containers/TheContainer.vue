@@ -1,6 +1,7 @@
 <template>
   <div class="c-app">
     <TheSidebar />
+    <TheRightSidebar v-if="$route.path !== '/overview'" />
     <CWrapper>
       <TheHeader />
       <div class="c-body">
@@ -21,6 +22,7 @@
 </template>
 
 <script>
+import TheRightSidebar from './TheRightSidebar.vue';
 import TheSidebar from './TheSidebar.vue';
 import TheHeader from './TheHeader.vue';
 import TheFooter from './TheFooter.vue';
@@ -28,6 +30,7 @@ import TheFooter from './TheFooter.vue';
 export default {
   name: 'TheContainer',
   components: {
+    TheRightSidebar,
     TheSidebar,
     TheHeader,
     TheFooter,

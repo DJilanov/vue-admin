@@ -3,16 +3,6 @@
     <CContainer>
       <CRow>
         <CCol lg="4">
-          <button
-            id="dropdownMenuButton1"
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            All maps
-          </button>
           <CDropdown
             color="light"
             toggler-text="All maps"

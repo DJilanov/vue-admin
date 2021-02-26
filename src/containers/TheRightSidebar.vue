@@ -1,9 +1,10 @@
 <template>
   <CSidebar
     fixed
+    aside
     :minimize="minimize"
     :show="show"
-    @update:show="(value) => $store.commit('navigation/set', ['leftSidebarShow', value])"
+    @update:show="(value) => $store.commit('navigation/set', ['rightSidebarShow', value])"
   >
     <CSidebarBrand
       class="d-md-down-none"
@@ -20,7 +21,7 @@
     />
     <CSidebarMinimizer
       class="d-md-down-none"
-      @click.native="$store.commit('navigation/set', ['leftSidebarMinimize', !minimize])"
+      @click.native="$store.commit('navigation/set', ['rightSidebarMinimize', !minimize])"
     />
   </CSidebar>
 </template>
@@ -29,14 +30,14 @@
 import nav from './_nav';
 
 export default {
-  name: 'TheSidebar',
+  name: 'TheRightSidebar',
   nav,
   computed: {
     show() {
-      return this.$store.state.navigation.leftSidebarShow;
+      return this.$store.state.navigation.rightSidebarShow;
     },
     minimize() {
-      return this.$store.state.navigation.leftSidebarMinimize;
+      return this.$store.state.navigation.rightSidebarMinimize;
     },
   },
 };

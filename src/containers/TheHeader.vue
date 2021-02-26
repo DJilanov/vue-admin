@@ -7,12 +7,12 @@
     <CToggler
       in-header
       class="ml-3 d-lg-none"
-      @click="$store.commit('navigation/toggleSidebarMobile')"
+      @click="$store.commit('navigation/toggleLeftSidebarMobile')"
     />
     <CToggler
       in-header
       class="ml-3 d-md-down-none"
-      @click="$store.commit('navigation/toggleSidebarDesktop')"
+      @click="$store.commit('navigation/toggleLeftSidebarDesktop')"
     />
     <CHeaderBrand
       class="mx-auto d-lg-none"

@@ -1,1 +1,67 @@
 // Here you can add other styles
+.game {
+/* ************************************
+    * Right sidebar
+    * ************************************/
+    --sidebar-right-width: 400px;
+
+    .c-main {
+        position: relative;
+        background-color: black;
+
+        svg {
+        color: $body-bgr;
+        }
+    }
+
+    .top-label {
+        position: absolute;
+        top: 0;
+        padding: 10px;
+
+        .team-left {
+        color: $team-left;
+        }
+
+        .team-right {
+        color: $team-right;
+        }
+
+        .time {
+        color: $body-bgr;
+        margin: 0 20px;
+        }
+    }
+
+    .left-icon-group {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 25px;
+
+        .c-icon:not(.c-icon-c-s):not(.c-icon-custom-size) {
+        flex: 0 0 30px;
+        }
+    }
+    .nav-link {
+        width: 50px;
+    }
+
+    .c-icon:not(.c-icon-c-s):not(.c-icon-custom-size) {
+        font-size: 1.3rem;
+    }
+
+    .message {
+        color: $body-bgr;
+    }
+
+    .tab-block {
+        padding: 15px;
+        border-bottom: 1px solid darken($nav-bgr, 20%);
+
+        h4 {
+        text-transform: uppercase;
+        }
+    }
+}
+  

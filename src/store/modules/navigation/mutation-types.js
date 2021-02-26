@@ -7,11 +7,13 @@
  */
 
 export const set = 'set';
-export const toggleSidebarDesktop = 'toggleSidebarDesktop';
-export const toggleSidebarMobile = 'toggleSidebarMobile';
+export const toggleLeftSidebarDesktop = 'toggleLeftSidebarDesktop';
+export const toggleLeftSidebarMobile = 'toggleLeftSidebarMobile';
+export const toggleRightSidebarDesktop = 'toggleRightSidebarDesktop';
+export const toggleRightSidebarMobile = 'toggleRightSidebarMobile';
 
 export default {
   set,
-  toggleSidebarDesktop,
-  toggleSidebarMobile,
+  toggleLeftSidebarDesktop,
+  toggleLeftSidebarMobile,
 };
